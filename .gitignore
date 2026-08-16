@@ -1,0 +1,218 @@
+@ -1,201 +1,7 @@
+# ===================================================================
+# Arquivos do Sistema Operacional
+# ===================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.exe
+
+# ===================================================================
+# Arquivos de IDEs e Editores Comuns
+# ===================================================================
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# CLion / IntelliJ
+.idea/
+
+# ===================================================================
+# C & C++ (Compilação e Build)
+# ===================================================================
+
+# Pastas de Build Comuns
+build/
+bin/
+obj/
+release/
+debug/
+
+# Arquivos de objeto compilados
+*.o
+*.obj
+*.ko
+*.obj.d
+
+# Bibliotecas e Binários
+*.a
+*.lib
+*.so
+*.dll
+*.exe
+*.out
+*.app
+
+# Arquivos de projeto gerados
+*.cproject
+*.project
+*.tags
+
+# ===================================================================
+# Arquivos Sensíveis e Logs
+# ===================================================================
+
+# Arquivos de ambiente com senhas e chaves de API
+*.env
+.env
+.env.*
+! .env.example
+
+# Arquivos de Log
+*.log
+
+# Arquivos temporários
+*.tmp
+*.temp
+
+# ===================================================================
+# Arquivos do Sistema Operacional
+# ===================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ===================================================================
+# Arquivos de IDEs e Editores Comuns
+# ===================================================================
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# CLion / IntelliJ
+.idea/
+
+# ===================================================================
+# Dependências e Pacotes (Gerenciadores de Pacotes)
+# ESTA É A NOVA SEÇÃO
+# ===================================================================
+
+# C & C++ (Vcpkg, Conan)
+# Ignora os diretórios onde as bibliotecas são instaladas/construídas.
+vcpkg_installed/
+packages/
+
+# JavaScript (npm, yarn, pnpm)
+# A mais famosa e importante regra de todas.
+node_modules/
+
+# Python (Virtual Environments)
+# Ignora o ambiente virtual que contém o interpretador e os pacotes.
+venv/
+.venv/
+env/
+.env/
+__pycache__/
+*.pyc
+
+# C# / .NET (NuGet)
+# Para projetos mais antigos que usavam um diretório de pacotes local.
+# Projetos modernos geralmente não precisam mais disso, mas é bom ter.
+*.nupkg
+packages/
+
+# Java (Maven, Gradle)
+# Ignora os diretórios de build que contém as dependências compiladas.
+target/
+build/
+.gradle/
+
+
+# ===================================================================
+# C & C++ (Compilação e Build)
+# ===================================================================
+
+# Pastas de Build Comuns (Muitas vezes usadas por dependências também)
+build/
+bin/
+obj/
+Release/
+Debug/
+
+# Arquivos de objeto compilados
+*.o
+*.obj
+*.ko
+*.obj.d
+
+# Bibliotecas e Binários
+*.a
+*.lib
+*.so
+*.dll
+*.exe
+*.out
+*.app
+
+# Arquivos de projeto gerados
+*.cproject
+*.project
+*.tags
+
+# ===================================================================
+# Arquivos Sensíveis e Logs
+# ===================================================================
+
+# Arquivos de ambiente com senhas e chaves de API
+*.env
+.env
+.env.*
+!.env.example
+
+# Arquivos de Log
+*.log
+
+# Arquivos temporários
+*.tmp
+*.temp
+node_modules
+
+Linguagens/C/.vscode/
+
+Linguagens/RHOS
+
+Linguagens/C#/Fundamentos/POO/01-Classes.cs
+
+Faculdade/4°-Desenvolvimento de sistemas moveis/Engenharia de software/Aula 11-03/ES_aula11032026_fork
+
+Faculdade/4°-Desenvolvimento de sistemas moveis/Engenharia de software/atividadeAvaliativa/AtividadeAvaliada_25032026
+
+Linguagens/C#/APIs WEB/02-api
+
+Faculdade/4°-Desenvolvimento de sistemas moveis/Desenvolvimento movel/Aula 23-04/ddm-projeto04

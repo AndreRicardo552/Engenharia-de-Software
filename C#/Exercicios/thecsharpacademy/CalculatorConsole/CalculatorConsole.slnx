@@ -1,3 +1,7 @@
 <Solution>
-  <Project Path="CalculatorConsole.csproj" />
+  <Folder Name="/src/">
+    <Project Path="src/Calculator.App/Calculator.App.csproj" />
+    <Project Path="src/Calculator.Core/Calculator.Core.csproj" />
+    <Project Path="src/Calculator.Parser/Calculator.Parser.csproj" />
+  </Folder>
 </Solution>

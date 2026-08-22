@@ -1,8 +1,3 @@
 namespace Calculator.Core;
 
-readonly record struct Command
-{
-    public double Num1 { get; init; }
-    public double Num2 { get; init; }
-    public Operation Op { get; init; }
-}
+public readonly record struct Command(double Num1, double Num2, Operation Op);

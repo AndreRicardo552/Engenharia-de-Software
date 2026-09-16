@@ -1,9 +1,18 @@
-﻿namespace Calculator.Parser;
+﻿using Calculator.Core;
+
+namespace Calculator.Parser;
 
 class Parser
 {
-    public static ParseResult Parse(ReadOnlySpan<char> expression)
+    public static ParseResult Parser(string? expression)
     {
-        return ParseResult;
+        if (string.IsNullOrWhiteSpace(expression))
+        {
+            return ParseResult.Failure("Empty expression");
+        }
+
+        ReadOnlySpan<char> trimmed = expression.AsSpan().Trim();
+
+        int opIndex = trimmed.IndexOfAny("+", "-", "*", "/");
     }
 }

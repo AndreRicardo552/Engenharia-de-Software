@@ -19,4 +19,14 @@ public static class ExtensionOperations
             Operation.Multiplication => "*",
             _ => " ",
         };
+
+    public static Operation? FromSymbol(ReadOnlySpan<char> symbol) =>
+        symbol switch
+        {
+            "+" => Operation.Addition,
+            "-" => Operation.Subtraction,
+            "*" => Operation.Multiplication,
+            "/" => Operation.Division,
+            _ => null,
+        };
 }

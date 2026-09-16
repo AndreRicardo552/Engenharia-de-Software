@@ -17,5 +17,5 @@ public readonly record struct ParseResult
 
     public static ParseResult Success(Command value) => new(true, value, null);
 
-    public static ParseResult Failure(string? err) => new(false, null, err);
+    public static ParseResult Failure(string? err) => new(false, default, err);
 }

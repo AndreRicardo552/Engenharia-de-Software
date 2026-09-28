@@ -20,13 +20,13 @@ public static class ExtensionOperations
             _ => " ",
         };
 
-    public static Operation? FromSymbol(ReadOnlySpan<char> symbol) =>
+    public static Operation? FromSymbol(this char symbol) =>
         symbol switch
         {
-            "+" => Operation.Addition,
-            "-" => Operation.Subtraction,
-            "*" => Operation.Multiplication,
-            "/" => Operation.Division,
+            '+' => Operation.Addition,
+            '-' => Operation.Subtraction,
+            '*' => Operation.Multiplication,
+            '/' => Operation.Division,
             _ => null,
         };
 }

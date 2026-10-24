@@ -1,10 +1,11 @@
-﻿using Calculator.Core;
+﻿using System.Globalization;
+using Calculator.Core;
 
 namespace Calculator.Parser;
 
-class Parser
+public class ExpressionParser
 {
-    public static ParseResult ParserExpression(string expression)
+    public static ParseResult Parse(string expression)
     {
         if (string.IsNullOrWhiteSpace(expression))
         {
@@ -26,12 +27,18 @@ class Parser
         ReadOnlySpan<char> rightSpan = trimmed[(opIndex + 1)..].Trim();
         char opChar = trimmed[opIndex];
 
-        if (!double.TryParse(leftSpan, out double leftNumber))
+        if (!double.TryParse(leftSpan, CultureInfo.InvariantCulture, out double leftNumber))
             return ParseResult.Failure("Invalid Expression, use only numbers");
-        if (!double.TryParse(rightSpan, out double rightNumber))
+        if (!double.TryParse(rightSpan, CultureInfo.InvariantCulture, out double rightNumber))
             return ParseResult.Failure("Invalid Expression, use only numbers");
 
-        if (!Enum.TryParse(Operation.FromSymbol(opChar), out Operation op))
+        Operation? op = OperationExtensions.FromSymbol(opChar);
+
+        if (op is null)
             return ParseResult.Failure("Invalid Expression, unrecognize operatetor");
+
+        Command command = new Command(leftNumber, rightNumber, op.GetValueOrDefault());
+
+        return ParseResult.Success(command);
     }
 }

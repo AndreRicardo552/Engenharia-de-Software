@@ -8,7 +8,7 @@ public enum Operation
     Multiplication,
 }
 
-public static class ExtensionOperations
+public static class OperationExtensions
 {
     public static string ToSymbol(this Operation op) =>
         op switch
@@ -17,10 +17,10 @@ public static class ExtensionOperations
             Operation.Subtraction => "-",
             Operation.Division => "/",
             Operation.Multiplication => "*",
-            _ => " ",
+            _ => throw new ArgumentOutOfRangeException(nameof(op), op, "Operation not found"),
         };
 
-    public static Operation? FromSymbol(this char symbol) =>
+    public static Operation? FromSymbol(char symbol) =>
         symbol switch
         {
             '+' => Operation.Addition,

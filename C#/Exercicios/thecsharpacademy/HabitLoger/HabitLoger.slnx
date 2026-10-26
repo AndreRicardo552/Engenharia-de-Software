@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/habit.app/habit.app.csproj" />
+    <Project Path="src/habit.core/habit.core.csproj" />
+  </Folder>
+</Solution>

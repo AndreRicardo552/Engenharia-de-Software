@@ -3,24 +3,4 @@ namespace habit.core
     public class core
     {
     }
-}namespace habit.core
-{
-    public class core
-    {
-    }
-}namespace habit.core
-{
-    public class core
-    {
-    }
-}namespace habit.core
-{
-    public class core
-    {
-    }
-}namespace habit.core
-{
-    public class core
-    {
-    }
 }

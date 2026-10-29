@@ -1,6 +1,0 @@
-namespace habit.core
-{
-    public class core
-    {
-    }
-}
